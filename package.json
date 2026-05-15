@@ -1,0 +1,12 @@
+{
+  "name": "cron-for-fengbroaisupabase",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "snapshot": "node scripts/snapshot-supabase.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
