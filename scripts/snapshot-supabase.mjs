@@ -69,7 +69,7 @@ for (const table of tables) {
     count: result.count,
     fetchedRows: result.rows.length,
     capturedAt: new Date().toISOString(),
-    rows: result.rows,
+    rows: redactSensitiveData(result.rows),
   };
 
   await writeJson(path.join(latestDir, `${safeFileName(table)}.json`), payload);
@@ -202,4 +202,46 @@ async function writeJson(filePath, value) {
 
 function safeFileName(value) {
   return value.replace(/[^a-zA-Z0-9._-]/g, "_");
+}
+
+function redactSensitiveData(value, key = "") {
+  if (value === null || value === undefined) {
+    return value;
+  }
+
+  if (isSensitiveKey(key)) {
+    return "[REDACTED_FIELD]";
+  }
+
+  if (typeof value === "string") {
+    return redactSensitiveString(value);
+  }
+
+  if (Array.isArray(value)) {
+    return value.map((item) => redactSensitiveData(item));
+  }
+
+  if (typeof value === "object") {
+    return Object.fromEntries(
+      Object.entries(value).map(([entryKey, entryValue]) => [
+        entryKey,
+        redactSensitiveData(entryValue, entryKey),
+      ]),
+    );
+  }
+
+  return value;
+}
+
+function isSensitiveKey(key) {
+  return /(?:api[_-]?key|authorization|bearer|openai|password|secret|service[_-]?role|token)/i.test(
+    key,
+  );
+}
+
+function redactSensitiveString(value) {
+  return value
+    .replace(/sk-[A-Za-z0-9_-]{20,}/g, "[REDACTED_OPENAI_KEY]")
+    .replace(/gh[opsu]_[A-Za-z0-9_]{20,}/g, "[REDACTED_GITHUB_TOKEN]")
+    .replace(/github_pat_[A-Za-z0-9_]{20,}/g, "[REDACTED_GITHUB_TOKEN]");
 }

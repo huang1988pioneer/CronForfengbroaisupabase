@@ -4,6 +4,8 @@ GitHub Actions cron job for `huang1988pioneer/fengbroaisupabase`.
 
 It runs every hour at minute 37, reads all exposed Supabase tables, records each table's row count and JSON content, then commits the snapshot back to this repository.
 
+Before writing snapshot files, the script redacts sensitive fields and common secret formats such as API keys, tokens, and passwords.
+
 ## GitHub Secrets
 
 Add these secrets in this repository:
