@@ -1,0 +1,76 @@
+{
+  "sourceRepository": "huang1988pioneer/fengbroaisupabase",
+  "schema": "public",
+  "startedAt": "2026-05-15T17:46:55.379Z",
+  "finishedAt": "2026-05-15T17:47:02.041Z",
+  "tableCount": 11,
+  "totalRows": 378,
+  "tables": [
+    {
+      "name": "article",
+      "count": 135,
+      "fetchedRows": 135,
+      "file": "article.json"
+    },
+    {
+      "name": "bank",
+      "count": 0,
+      "fetchedRows": 0,
+      "file": "bank.json"
+    },
+    {
+      "name": "commonaccount",
+      "count": 173,
+      "fetchedRows": 173,
+      "file": "commonaccount.json"
+    },
+    {
+      "name": "commondocument",
+      "count": 0,
+      "fetchedRows": 0,
+      "file": "commondocument.json"
+    },
+    {
+      "name": "food",
+      "count": 21,
+      "fetchedRows": 21,
+      "file": "food.json"
+    },
+    {
+      "name": "image",
+      "count": 1,
+      "fetchedRows": 1,
+      "file": "image.json"
+    },
+    {
+      "name": "music",
+      "count": 0,
+      "fetchedRows": 0,
+      "file": "music.json"
+    },
+    {
+      "name": "podcast",
+      "count": 0,
+      "fetchedRows": 0,
+      "file": "podcast.json"
+    },
+    {
+      "name": "routine",
+      "count": 0,
+      "fetchedRows": 0,
+      "file": "routine.json"
+    },
+    {
+      "name": "subscription",
+      "count": 47,
+      "fetchedRows": 47,
+      "file": "subscription.json"
+    },
+    {
+      "name": "video",
+      "count": 1,
+      "fetchedRows": 1,
+      "file": "video.json"
+    }
+  ]
+}

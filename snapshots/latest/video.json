@@ -1,0 +1,21 @@
+{
+  "table": "video",
+  "schema": "public",
+  "count": 1,
+  "fetchedRows": 1,
+  "capturedAt": "2026-05-15T17:47:02.041Z",
+  "rows": [
+    {
+      "id": "d87f5ee8-e8e4-48f0-9fc5-1c0fe7b881d5",
+      "created_at": "2026-05-15T17:08:56.372192+00:00",
+      "name": "我與國中畢業紀念冊的對話led ‑ Made with FlexClip",
+      "file": "supabase-multipart://huang1988pioneer/video/mp_mp7688xivu0wm6.mp4?parts=3",
+      "filetype": "mp4",
+      "note": null,
+      "ref": null,
+      "category": null,
+      "hash": null,
+      "cover": null
+    }
+  ]
+}

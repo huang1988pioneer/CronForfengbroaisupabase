@@ -1,0 +1,22 @@
+{
+  "table": "image",
+  "schema": "public",
+  "count": 1,
+  "fetchedRows": 1,
+  "capturedAt": "2026-05-15T17:47:00.405Z",
+  "rows": [
+    {
+      "id": "6d4df30a-fa4c-4a92-aaaa-13a572159d5a",
+      "name": "20260515-93",
+      "file": "gallery/1778864738209_20260515-93.jpg",
+      "filetype": "jpg",
+      "note": null,
+      "ref": null,
+      "category": null,
+      "hash": null,
+      "cover": null,
+      "created_at": "2026-05-15T17:05:39.299081+00:00",
+      "updated_at": "2026-05-15T17:05:39.299081+00:00"
+    }
+  ]
+}
