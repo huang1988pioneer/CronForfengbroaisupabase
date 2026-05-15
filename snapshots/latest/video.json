@@ -1,15 +1,39 @@
 {
   "table": "video",
   "schema": "public",
-  "count": 1,
-  "fetchedRows": 1,
-  "capturedAt": "2026-05-15T17:51:14.746Z",
+  "count": 3,
+  "fetchedRows": 3,
+  "capturedAt": "2026-05-15T20:45:59.245Z",
   "rows": [
     {
       "id": "d87f5ee8-e8e4-48f0-9fc5-1c0fe7b881d5",
       "created_at": "2026-05-15T17:08:56.372192+00:00",
       "name": "我與國中畢業紀念冊的對話led ‑ Made with FlexClip",
       "file": "supabase-multipart://huang1988pioneer/video/mp_mp7688xivu0wm6.mp4?parts=3",
+      "filetype": "mp4",
+      "note": null,
+      "ref": null,
+      "category": null,
+      "hash": null,
+      "cover": null
+    },
+    {
+      "id": "da9a55ff-d1a6-4350-aa16-466b2a9c7bc3",
+      "created_at": "2026-05-15T18:17:16.788796+00:00",
+      "name": "水電進化 Show ‑ Made with FlexClip",
+      "file": "supabase-multipart://huang1988pioneer/video/mp_mp78nke3em5tud.mp4?parts=4",
+      "filetype": "mp4",
+      "note": null,
+      "ref": null,
+      "category": null,
+      "hash": null,
+      "cover": null
+    },
+    {
+      "id": "04595b9d-10bd-4698-a839-06e431538be1",
+      "created_at": "2026-05-15T18:17:16.788796+00:00",
+      "name": "鋒兄進化 Show！ ‑ Made with FlexClip",
+      "file": "supabase-multipart://huang1988pioneer/video/mp_mp78oflxachdga.mp4?parts=3",
       "filetype": "mp4",
       "note": null,
       "ref": null,
