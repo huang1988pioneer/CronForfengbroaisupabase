@@ -21,6 +21,11 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Sync latest main
+        run: git pull --ff-only origin main
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
