@@ -7,7 +7,7 @@ const SUPABASE_KEY =
 const SCHEMA = process.env.SUPABASE_SCHEMA || "public";
 const TABLES = parseTableList(process.env.SUPABASE_TABLES);
 const PAGE_SIZE = Number.parseInt(process.env.SNAPSHOT_PAGE_SIZE || "1000", 10);
-const RETENTION_DAYS = Number.parseInt(process.env.SNAPSHOT_RETENTION_DAYS || "3", 10);
+const RETENTION_DAYS = Number.parseInt(process.env.SNAPSHOT_RETENTION_DAYS || "30", 10);
 
 if (!SUPABASE_KEY) {
   throw new Error(

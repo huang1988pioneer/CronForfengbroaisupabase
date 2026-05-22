@@ -40,7 +40,7 @@ jobs:
           SUPABASE_SCHEMA: ${{ secrets.SUPABASE_SCHEMA }}
           SUPABASE_TABLES: ${{ secrets.SUPABASE_TABLES }}
           SNAPSHOT_PAGE_SIZE: ${{ secrets.SNAPSHOT_PAGE_SIZE }}
-          SNAPSHOT_RETENTION_DAYS: ${{ vars.SNAPSHOT_RETENTION_DAYS || '3' }}
+          SNAPSHOT_RETENTION_DAYS: ${{ vars.SNAPSHOT_RETENTION_DAYS || '30' }}
         run: npm run snapshot
 
       - name: Upload latest snapshot artifact
