@@ -1,4 +1,4 @@
-import { mkdir, rm, writeFile } from "node:fs/promises";
+import { mkdir, readdir, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
 
 const SUPABASE_URL = requiredEnv("SUPABASE_URL").replace(/\/+$/, "");
@@ -7,6 +7,7 @@ const SUPABASE_KEY =
 const SCHEMA = process.env.SUPABASE_SCHEMA || "public";
 const TABLES = parseTableList(process.env.SUPABASE_TABLES);
 const PAGE_SIZE = Number.parseInt(process.env.SNAPSHOT_PAGE_SIZE || "1000", 10);
+const RETENTION_DAYS = Number.parseInt(process.env.SNAPSHOT_RETENTION_DAYS || "3", 10);
 
 if (!SUPABASE_KEY) {
   throw new Error(
@@ -16,6 +17,10 @@ if (!SUPABASE_KEY) {
 
 if (!Number.isInteger(PAGE_SIZE) || PAGE_SIZE < 1) {
   throw new Error("SNAPSHOT_PAGE_SIZE must be a positive integer.");
+}
+
+if (!Number.isInteger(RETENTION_DAYS) || RETENTION_DAYS < 1) {
+  throw new Error("SNAPSHOT_RETENTION_DAYS must be a positive integer.");
 }
 
 const headers = {
@@ -78,6 +83,7 @@ for (const table of tables) {
 summary.finishedAt = new Date().toISOString();
 await writeJson(path.join(latestDir, "summary.json"), summary);
 await writeJson(path.join(runDir, "summary.json"), summary);
+await pruneOldRuns(startedAt);
 
 console.log(
   `Captured ${summary.tableCount} tables with ${summary.totalRows} total rows.`,
@@ -198,6 +204,48 @@ async function requestTablePage(table, from, to) {
 
 async function writeJson(filePath, value) {
   await writeFile(filePath, `${JSON.stringify(value, null, 2)}\n`);
+}
+
+async function pruneOldRuns(now) {
+  const runsDir = path.join("snapshots", "runs");
+  const cutoff = now.getTime() - RETENTION_DAYS * 24 * 60 * 60 * 1000;
+
+  let entries = [];
+  try {
+    entries = await readdir(runsDir, { withFileTypes: true });
+  } catch (error) {
+    if (error.code === "ENOENT") {
+      return;
+    }
+
+    throw error;
+  }
+
+  for (const entry of entries) {
+    if (!entry.isDirectory()) {
+      continue;
+    }
+
+    const runDate = parseRunIdDate(entry.name);
+    if (!runDate || runDate.getTime() >= cutoff) {
+      continue;
+    }
+
+    await rm(path.join(runsDir, entry.name), { recursive: true, force: true });
+    console.log(`Pruned old snapshot run ${entry.name}`);
+  }
+}
+
+function parseRunIdDate(runId) {
+  const match = runId.match(
+    /^(\d{4}-\d{2}-\d{2})T(\d{2})-(\d{2})-(\d{2})-(\d{3})Z$/,
+  );
+
+  if (!match) {
+    return null;
+  }
+
+  return new Date(`${match[1]}T${match[2]}:${match[3]}:${match[4]}.${match[5]}Z`);
 }
 
 function safeFileName(value) {

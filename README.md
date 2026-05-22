@@ -18,11 +18,14 @@ Optional:
 - `SUPABASE_TABLES`: comma-separated table names. Use this if automatic table discovery is not available, for example `image,video,music,podcast`
 - `SUPABASE_SCHEMA`: defaults to `public`
 - `SNAPSHOT_PAGE_SIZE`: defaults to `1000`
+- `SNAPSHOT_RETENTION_DAYS`: repository variable, defaults to `3`
 
 ## Output
 
 - `snapshots/latest/summary.json`: latest run summary and counts
 - `snapshots/latest/<table>.json`: latest table content
 - `snapshots/runs/<timestamp>/summary.json`: timestamped run summary
+
+Snapshot run history is kept for the latest 3 days by default.
 
 The workflow also uploads the latest snapshot as a GitHub Actions artifact.
