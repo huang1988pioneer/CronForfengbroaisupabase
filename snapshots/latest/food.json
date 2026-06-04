@@ -1,72 +1,24 @@
 {
   "table": "food",
   "schema": "public",
-  "count": 21,
-  "fetchedRows": 21,
-  "capturedAt": "2026-06-04T11:41:15.913Z",
+  "count": 20,
+  "fetchedRows": 20,
+  "capturedAt": "2026-06-04T20:30:56.015Z",
   "rows": [
     {
-      "id": "5f752445-8518-429a-b37f-1f554380784b",
-      "name": "【義美】煎餅",
-      "amount": 2,
-      "price": null,
-      "shop": null,
-      "todate": "2026-05-19",
-      "photo": "https://web.hocom.tw/Uploads/Product/112397_un09317k.jpg",
-      "photohash": null,
-      "created_at": "2026-05-15T17:04:23.703551+00:00",
-      "updated_at": "2026-05-15T17:04:23.703551+00:00"
-    },
-    {
-      "id": "ceba9ade-8381-4a85-bb05-df4b9b809e1c",
+      "id": "ee9a2c69-34f1-492f-b63a-5419ffca177c",
       "name": "小北百貨30元購物金",
-      "amount": 5,
-      "price": null,
-      "shop": null,
-      "todate": "2026-05-30",
-      "photo": null,
-      "photohash": null,
-      "created_at": "2026-05-15T17:04:23.703551+00:00",
-      "updated_at": "2026-05-15T17:04:23.703551+00:00"
-    },
-    {
-      "id": "a468b3ee-6bb7-4e00-bf83-43e7983651c1",
-      "name": "【黑松】FIN補給飲料",
-      "amount": 9,
-      "price": null,
-      "shop": null,
-      "todate": "2026-06-13",
-      "photo": "https://media.etmall.com.tw/nximg/007749/7749527/7749527-1_xxl.jpg?t=22230879535",
-      "photohash": null,
-      "created_at": "2026-05-15T17:04:23.703551+00:00",
-      "updated_at": "2026-05-15T17:04:23.703551+00:00"
-    },
-    {
-      "id": "d5efae83-17f4-4f7c-9826-720530b6a781",
-      "name": "【義美】煎餅",
       "amount": 1,
       "price": null,
       "shop": null,
-      "todate": "2026-07-14",
+      "todate": "2026-06-11",
       "photo": null,
       "photohash": null,
-      "created_at": "2026-05-15T17:04:23.703551+00:00",
-      "updated_at": "2026-05-15T17:04:23.703551+00:00"
+      "created_at": "2026-06-04T16:20:48.884456+00:00",
+      "updated_at": "2026-06-04T16:20:48.884456+00:00"
     },
     {
-      "id": "111384d5-4a67-49d5-875c-deaa584d2925",
-      "name": "【義美】榛果巧克力酥片",
-      "amount": 1,
-      "price": null,
-      "shop": null,
-      "todate": "2026-07-15",
-      "photo": "https://online.carrefour.com.tw/on/demandware.static/-/Sites-carrefour-tw-m-inner/default/dw0a0ee190/images/large/0220110.jpeg",
-      "photohash": null,
-      "created_at": "2026-05-15T17:04:23.703551+00:00",
-      "updated_at": "2026-05-15T17:04:23.703551+00:00"
-    },
-    {
-      "id": "f54e24de-869e-4813-8cef-889c3f942c25",
+      "id": "4e049685-8e6c-43a1-8f99-3ad0ef83fd0a",
       "name": "【義美】煎餅 ~08/13 ~08/25",
       "amount": 4,
       "price": null,
@@ -74,35 +26,35 @@
       "todate": "2026-08-04",
       "photo": null,
       "photohash": null,
-      "created_at": "2026-05-15T17:04:23.703551+00:00",
-      "updated_at": "2026-05-15T17:04:23.703551+00:00"
+      "created_at": "2026-06-04T16:20:48.884456+00:00",
+      "updated_at": "2026-06-04T16:20:48.884456+00:00"
     },
     {
-      "id": "2b0efd0d-0fe3-4c7e-8a22-0e7881cd9129",
+      "id": "3480bd25-92ab-4419-b5d9-8a86cbb2f2d1",
       "name": "【愛之味】牛奶花生",
-      "amount": 6,
+      "amount": 4,
       "price": null,
       "shop": null,
       "todate": "2027-03-04",
       "photo": "https://www.agv.com.tw/wp-content/uploads/69691c7bdcc3ce6d5d8a1361f22d04ac.jpg",
       "photohash": null,
-      "created_at": "2026-05-15T17:04:23.703551+00:00",
-      "updated_at": "2026-05-15T17:04:23.703551+00:00"
+      "created_at": "2026-06-04T16:20:48.884456+00:00",
+      "updated_at": "2026-06-04T16:20:48.884456+00:00"
     },
     {
-      "id": "b044f67d-a306-41e8-8cec-6a7365cfa36a",
+      "id": "3c76ff9b-a089-4831-872c-ed3aa9e5ded9",
       "name": "【泰山】八寶粥",
-      "amount": 6,
+      "amount": 5,
       "price": null,
       "shop": null,
       "todate": "2027-04-14",
       "photo": "https://shoplineimg.com/64587ad406d620007ce10917/6463162e0fa8d10001cc0eb5/800x.jpg?",
       "photohash": null,
-      "created_at": "2026-05-15T17:04:23.703551+00:00",
-      "updated_at": "2026-05-15T17:04:23.703551+00:00"
+      "created_at": "2026-06-04T16:20:48.884456+00:00",
+      "updated_at": "2026-06-04T16:20:48.884456+00:00"
     },
     {
-      "id": "7c2c1bb2-69d3-4bbf-b6a3-a84d4e96a49c",
+      "id": "e4dd1246-d3f4-47f0-b23d-a6e47b2bdf04",
       "name": "【台糖】安心豚 瓜仔肉醬",
       "amount": 2,
       "price": null,
@@ -110,11 +62,11 @@
       "todate": "2028-02-27",
       "photo": "https://fs1.shop123.com.tw/400467/upload/product/4004673346pic_origin_310994859874_ars_600_600.webp",
       "photohash": null,
-      "created_at": "2026-05-15T17:04:23.703551+00:00",
-      "updated_at": "2026-05-15T17:04:23.703551+00:00"
+      "created_at": "2026-06-04T16:20:48.884456+00:00",
+      "updated_at": "2026-06-04T16:20:48.884456+00:00"
     },
     {
-      "id": "3cf07786-e4f8-49dc-ba66-b1a866182dcb",
+      "id": "49e79e94-9b40-4eb4-b82f-2a7550051092",
       "name": "【台糖】豆豉紅燒鰻",
       "amount": 3,
       "price": null,
@@ -122,23 +74,23 @@
       "todate": "2028-06-04",
       "photo": "https://fs1.shop123.com.tw/400467/upload/product/4004673457pic_outside_441268438813.jpg",
       "photohash": null,
-      "created_at": "2026-05-15T17:04:23.703551+00:00",
-      "updated_at": "2026-05-15T17:04:23.703551+00:00"
+      "created_at": "2026-06-04T16:20:48.884456+00:00",
+      "updated_at": "2026-06-04T16:20:48.884456+00:00"
     },
     {
-      "id": "b5d422fe-4d96-4e5b-9161-2a4b43d1d2e9",
+      "id": "7ea8b63b-951a-41c9-a2ef-9fe97cc45e7d",
       "name": "【遠洋牌】鮪魚三明治",
-      "amount": 2,
+      "amount": 1,
       "price": null,
       "shop": null,
       "todate": "2028-07-28",
       "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl6UCwjaicHkv5XB5Zus8QkIoFrEz0EIiNCw&s",
       "photohash": null,
-      "created_at": "2026-05-15T17:04:23.703551+00:00",
-      "updated_at": "2026-05-15T17:04:23.703551+00:00"
+      "created_at": "2026-06-04T16:20:48.884456+00:00",
+      "updated_at": "2026-06-04T16:20:48.884456+00:00"
     },
     {
-      "id": "095da10d-cfb0-4400-9676-62a552f3cbce",
+      "id": "75eaa90b-8027-4fb1-a785-180f66d06e1e",
       "name": "青葉麵筋",
       "amount": 3,
       "price": null,
@@ -146,11 +98,11 @@
       "todate": "2028-11-06",
       "photo": "https://chinyeh.com.tw/wp-content/uploads/2025/07/chinyeh-product_12-1_3KG%E9%BA%B5%E7%AD%8B-1030x1030.jpg",
       "photohash": null,
-      "created_at": "2026-05-15T17:04:23.703551+00:00",
-      "updated_at": "2026-05-15T17:04:23.703551+00:00"
+      "created_at": "2026-06-04T16:20:48.884456+00:00",
+      "updated_at": "2026-06-04T16:20:48.884456+00:00"
     },
     {
-      "id": "ae189cfa-0e52-4747-871e-e537cd1b9602",
+      "id": "7a72c9c1-b577-4a22-b9a9-30e325847c50",
       "name": "【遠洋牌】水煮鮪魚片",
       "amount": 3,
       "price": null,
@@ -158,11 +110,11 @@
       "todate": "2028-11-20",
       "photo": "https://online.carrefour.com.tw/on/demandware.static/-/Sites-carrefour-tw-m-inner/default/dw109cd06c/images/large/1483000100103.png",
       "photohash": null,
-      "created_at": "2026-05-15T17:04:23.703551+00:00",
-      "updated_at": "2026-05-15T17:04:23.703551+00:00"
+      "created_at": "2026-06-04T16:20:48.884456+00:00",
+      "updated_at": "2026-06-04T16:20:48.884456+00:00"
     },
     {
-      "id": "bd70194e-dc69-40d6-9f2b-3b7495987ffa",
+      "id": "6ace1eef-1ab3-4512-96e2-587f6088184f",
       "name": "SAMSUNG Galaxy A56 手機殼",
       "amount": 2,
       "price": null,
@@ -170,11 +122,11 @@
       "todate": null,
       "photo": "https://img.pchome.com.tw/cs/items/DYAGH2A900IJWLB/000001_1744611620.jpg",
       "photohash": null,
-      "created_at": "2026-05-15T17:04:23.703551+00:00",
-      "updated_at": "2026-05-15T17:04:23.703551+00:00"
+      "created_at": "2026-06-04T16:20:48.884456+00:00",
+      "updated_at": "2026-06-04T16:20:48.884456+00:00"
     },
     {
-      "id": "42cfd748-663d-41e6-8123-21c86efda7da",
+      "id": "a24c8939-2c61-4f7f-a028-b0a08852b953",
       "name": "SAMSUNG Galaxy A56 保護貼",
       "amount": 2,
       "price": null,
@@ -182,11 +134,11 @@
       "todate": null,
       "photo": "https://img.pchome.com.tw/cs/items/DYAHC8A900ILXPQ/000001_1745229681.jpg",
       "photohash": null,
-      "created_at": "2026-05-15T17:04:23.703551+00:00",
-      "updated_at": "2026-05-15T17:04:23.703551+00:00"
+      "created_at": "2026-06-04T16:20:48.884456+00:00",
+      "updated_at": "2026-06-04T16:20:48.884456+00:00"
     },
     {
-      "id": "33079476-07e1-4cd9-9606-e28aa4d62a72",
+      "id": "ef4c973d-5659-4a2d-ba42-f46163bf22ff",
       "name": "G102 滑鼠",
       "amount": 1,
       "price": 499,
@@ -194,11 +146,11 @@
       "todate": null,
       "photo": "https://img.pchome.com.tw/cs/items/DSAR1LA900FYPGP/000007_1675074260.jpg",
       "photohash": null,
-      "created_at": "2026-05-15T17:04:23.703551+00:00",
-      "updated_at": "2026-05-15T17:04:23.703551+00:00"
+      "created_at": "2026-06-04T16:20:48.884456+00:00",
+      "updated_at": "2026-06-04T16:20:48.884456+00:00"
     },
     {
-      "id": "8c87bc3d-fd74-4025-adc0-987cd62c1f01",
+      "id": "e468f8b6-86f3-4f4e-93a0-c3e69e65ea36",
       "name": "RP-HZ47",
       "amount": 1,
       "price": null,
@@ -206,11 +158,11 @@
       "todate": null,
       "photo": "https://img.pchome.com.tw/cs/items/QAAQ4OA9008PYMJ/000001_1620143285.jpg",
       "photohash": null,
-      "created_at": "2026-05-15T17:04:23.703551+00:00",
-      "updated_at": "2026-05-15T17:04:23.703551+00:00"
+      "created_at": "2026-06-04T16:20:48.884456+00:00",
+      "updated_at": "2026-06-04T16:20:48.884456+00:00"
     },
     {
-      "id": "f66eb780-e1e4-4528-862e-4d6968d55211",
+      "id": "ccf816f9-2101-40ad-b359-3b59d985a374",
       "name": "ATH-EQ300M",
       "amount": 1,
       "price": null,
@@ -218,11 +170,11 @@
       "todate": null,
       "photo": "https://img.pchome.com.tw/cs/items/QAAP5QA9008EKZZ/000001_1680235577.jpg",
       "photohash": null,
-      "created_at": "2026-05-15T17:04:23.703551+00:00",
-      "updated_at": "2026-05-15T17:04:23.703551+00:00"
+      "created_at": "2026-06-04T16:20:48.884456+00:00",
+      "updated_at": "2026-06-04T16:20:48.884456+00:00"
     },
     {
-      "id": "f6ba0c7f-e003-414e-a4ee-a7bc73bbc970",
+      "id": "be7ebd02-c6ac-4aed-bb71-29a6d162a704",
       "name": "HDMI 3進1出切換器 附遙控器",
       "amount": 1,
       "price": null,
@@ -230,11 +182,11 @@
       "todate": null,
       "photo": "https://down-tw.img.susercontent.com/file/tw-11134207-7r98o-lpgcn4joox2rc3.webp",
       "photohash": null,
-      "created_at": "2026-05-15T17:04:23.703551+00:00",
-      "updated_at": "2026-05-15T17:04:23.703551+00:00"
+      "created_at": "2026-06-04T16:20:48.884456+00:00",
+      "updated_at": "2026-06-04T16:20:48.884456+00:00"
     },
     {
-      "id": "d2c631e8-1c4f-4e6d-ae7e-20fe8c246f5c",
+      "id": "ad3783a6-bdc3-45ad-9896-aa40613505c8",
       "name": "USB-C to Lightning Cobvertor Cable",
       "amount": 1,
       "price": null,
@@ -242,11 +194,11 @@
       "todate": null,
       "photo": "https://cs-a.ecimg.tw/items/DCAC4MA900FNA3C/000001_1665995632.jpg",
       "photohash": null,
-      "created_at": "2026-05-15T17:04:23.703551+00:00",
-      "updated_at": "2026-05-15T17:04:23.703551+00:00"
+      "created_at": "2026-06-04T16:20:48.884456+00:00",
+      "updated_at": "2026-06-04T16:20:48.884456+00:00"
     },
     {
-      "id": "3b33f340-418f-4bd0-b494-1441be389be8",
+      "id": "595ccaa2-8f34-49ae-ae8c-fa5b1cdc5e49",
       "name": "Lightning & TYPE-C 公轉母 3.5mm 二合一 音頻轉接線",
       "amount": 1,
       "price": null,
@@ -254,8 +206,44 @@
       "todate": null,
       "photo": null,
       "photohash": null,
-      "created_at": "2026-05-15T17:04:23.703551+00:00",
-      "updated_at": "2026-05-15T17:04:23.703551+00:00"
+      "created_at": "2026-06-04T16:20:48.884456+00:00",
+      "updated_at": "2026-06-04T16:20:48.884456+00:00"
+    },
+    {
+      "id": "8ed589e0-ac16-466b-a992-6679949bd34d",
+      "name": "替換式開箱刀個人資料保護章/IS-590CM/替換卡匣",
+      "amount": 1,
+      "price": null,
+      "shop": null,
+      "todate": null,
+      "photo": null,
+      "photohash": null,
+      "created_at": "2026-06-04T16:20:48.884456+00:00",
+      "updated_at": "2026-06-04T16:20:48.884456+00:00"
+    },
+    {
+      "id": "da5cd0ef-17d9-483d-92fa-a8a5f96468b4",
+      "name": "CW手機配件工廠批發店/Magsafe/磁吸 手機殼",
+      "amount": 1,
+      "price": null,
+      "shop": null,
+      "todate": null,
+      "photo": null,
+      "photohash": null,
+      "created_at": "2026-06-04T16:20:48.884456+00:00",
+      "updated_at": "2026-06-04T16:20:48.884456+00:00"
+    },
+    {
+      "id": "8a2b2956-76cb-4fd3-b806-da56ced2b2df",
+      "name": "ORICO/奧睿科/Mac mini周邊",
+      "amount": 1,
+      "price": null,
+      "shop": null,
+      "todate": null,
+      "photo": null,
+      "photohash": null,
+      "created_at": "2026-06-04T16:20:48.884456+00:00",
+      "updated_at": "2026-06-04T16:20:48.884456+00:00"
     }
   ]
 }
