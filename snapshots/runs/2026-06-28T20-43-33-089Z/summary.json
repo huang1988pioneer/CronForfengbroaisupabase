@@ -1,10 +1,10 @@
 {
   "sourceRepository": "huang1988pioneer/fengbroaisupabase",
   "schema": "public",
-  "startedAt": "2026-05-29T19:58:07.354Z",
-  "finishedAt": "2026-05-29T19:58:18.984Z",
+  "startedAt": "2026-06-28T20:43:33.089Z",
+  "finishedAt": "2026-06-28T20:43:43.002Z",
   "tableCount": 11,
-  "totalRows": 452,
+  "totalRows": 476,
   "tables": [
     {
       "name": "article",
@@ -32,14 +32,14 @@
     },
     {
       "name": "food",
-      "count": 21,
-      "fetchedRows": 21,
+      "count": 20,
+      "fetchedRows": 20,
       "file": "food.json"
     },
     {
       "name": "image",
-      "count": 1,
-      "fetchedRows": 1,
+      "count": 15,
+      "fetchedRows": 15,
       "file": "image.json"
     },
     {
@@ -62,8 +62,8 @@
     },
     {
       "name": "subscription",
-      "count": 47,
-      "fetchedRows": 47,
+      "count": 58,
+      "fetchedRows": 58,
       "file": "subscription.json"
     },
     {
