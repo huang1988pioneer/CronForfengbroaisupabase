@@ -1,10 +1,10 @@
 {
   "sourceRepository": "huang1988pioneer/fengbroaisupabase",
   "schema": "public",
-  "startedAt": "2026-06-05T08:57:49.836Z",
-  "finishedAt": "2026-06-05T08:57:57.357Z",
+  "startedAt": "2026-07-05T10:48:59.139Z",
+  "finishedAt": "2026-07-05T10:49:07.329Z",
   "tableCount": 11,
-  "totalRows": 462,
+  "totalRows": 476,
   "tables": [
     {
       "name": "article",
@@ -38,8 +38,8 @@
     },
     {
       "name": "image",
-      "count": 1,
-      "fetchedRows": 1,
+      "count": 15,
+      "fetchedRows": 15,
       "file": "image.json"
     },
     {
