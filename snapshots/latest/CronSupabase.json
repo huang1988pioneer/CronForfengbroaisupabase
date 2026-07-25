@@ -1,8 +1,8 @@
 {
-  "table": "podcast",
+  "table": "CronSupabase",
   "schema": "public",
   "count": 0,
   "fetchedRows": 0,
-  "capturedAt": "2026-07-25T16:29:08.538Z",
+  "capturedAt": "2026-07-25T16:29:06.040Z",
   "rows": []
 }
