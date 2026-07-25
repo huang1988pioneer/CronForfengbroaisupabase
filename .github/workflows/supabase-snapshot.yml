@@ -41,6 +41,10 @@ jobs:
           SUPABASE_TABLES: ${{ secrets.SUPABASE_TABLES }}
           SNAPSHOT_PAGE_SIZE: ${{ secrets.SNAPSHOT_PAGE_SIZE }}
           SNAPSHOT_RETENTION_DAYS: ${{ vars.SNAPSHOT_RETENTION_DAYS || '30' }}
+          # Odd hour: insert into CronSupabase; even hour: delete all rows
+          CRON_SUPABASE_TABLE: ${{ vars.CRON_SUPABASE_TABLE || 'CronSupabase' }}
+          CRON_TIMEZONE: ${{ vars.CRON_TIMEZONE || 'Asia/Taipei' }}
+          CRON_SUPABASE_ENABLED: ${{ vars.CRON_SUPABASE_ENABLED || 'true' }}
         run: npm run snapshot
 
       - name: Upload latest snapshot artifact

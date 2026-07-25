@@ -8,6 +8,10 @@ const SCHEMA = process.env.SUPABASE_SCHEMA || "public";
 const TABLES = parseTableList(process.env.SUPABASE_TABLES);
 const PAGE_SIZE = Number.parseInt(process.env.SNAPSHOT_PAGE_SIZE || "1000", 10);
 const RETENTION_DAYS = Number.parseInt(process.env.SNAPSHOT_RETENTION_DAYS || "30", 10);
+const CRON_SUPABASE_TABLE = process.env.CRON_SUPABASE_TABLE || "CronSupabase";
+const CRON_TIMEZONE = process.env.CRON_TIMEZONE || "Asia/Taipei";
+const CRON_SUPABASE_ENABLED =
+  (process.env.CRON_SUPABASE_ENABLED || "true").toLowerCase() !== "false";
 
 if (!SUPABASE_KEY) {
   throw new Error(
@@ -27,6 +31,7 @@ const headers = {
   apikey: SUPABASE_KEY,
   Authorization: `Bearer ${SUPABASE_KEY}`,
   "Accept-Profile": SCHEMA,
+  "Content-Profile": SCHEMA,
 };
 
 const startedAt = new Date();
@@ -38,6 +43,11 @@ await mkdir("snapshots", { recursive: true });
 await rm(latestDir, { recursive: true, force: true });
 await mkdir(latestDir, { recursive: true });
 await mkdir(runDir, { recursive: true });
+
+let cronSupabaseAction = null;
+if (CRON_SUPABASE_ENABLED) {
+  cronSupabaseAction = await syncCronSupabaseByHour(startedAt);
+}
 
 const tables = TABLES.length ? TABLES : await discoverTables();
 
@@ -55,6 +65,7 @@ const summary = {
   tableCount: tables.length,
   totalRows: 0,
   tables: [],
+  cronSupabase: cronSupabaseAction,
 };
 
 for (const table of tables) {
@@ -95,6 +106,139 @@ function requiredEnv(name) {
     throw new Error(`Missing ${name} environment variable.`);
   }
   return value;
+}
+
+/**
+ * Odd hour  -> insert one row into CronSupabase
+ * Even hour -> delete all rows from CronSupabase
+ * Hour is evaluated in CRON_TIMEZONE (default Asia/Taipei).
+ */
+async function syncCronSupabaseByHour(now) {
+  const hour = getHourInTimeZone(now, CRON_TIMEZONE);
+  const isOddHour = hour % 2 === 1;
+  const localTime = formatInTimeZone(now, CRON_TIMEZONE);
+
+  if (isOddHour) {
+    const row = {
+      name: `cron-${localTime}`,
+      note: `Written at odd hour ${hour} (${CRON_TIMEZONE}) run ${runId}`,
+    };
+    const inserted = await insertCronSupabaseRow(row);
+    console.log(
+      `CronSupabase: odd hour ${hour} (${CRON_TIMEZONE}) -> inserted 1 row`,
+    );
+    return {
+      table: CRON_SUPABASE_TABLE,
+      timezone: CRON_TIMEZONE,
+      hour,
+      action: "insert",
+      localTime,
+      inserted,
+    };
+  }
+
+  const deletedCount = await deleteAllCronSupabaseRows();
+  console.log(
+    `CronSupabase: even hour ${hour} (${CRON_TIMEZONE}) -> deleted ${deletedCount} row(s)`,
+  );
+  return {
+    table: CRON_SUPABASE_TABLE,
+    timezone: CRON_TIMEZONE,
+    hour,
+    action: "delete",
+    localTime,
+    deletedCount,
+  };
+}
+
+function getHourInTimeZone(date, timeZone) {
+  const parts = new Intl.DateTimeFormat("en-US", {
+    timeZone,
+    hour: "numeric",
+    hourCycle: "h23",
+  }).formatToParts(date);
+  const hourPart = parts.find((part) => part.type === "hour");
+  if (!hourPart) {
+    throw new Error(`Unable to resolve hour for timezone ${timeZone}.`);
+  }
+  return Number.parseInt(hourPart.value, 10);
+}
+
+function formatInTimeZone(date, timeZone) {
+  const parts = new Intl.DateTimeFormat("en-CA", {
+    timeZone,
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    hourCycle: "h23",
+  }).formatToParts(date);
+
+  const get = (type) => parts.find((part) => part.type === type)?.value || "00";
+  return `${get("year")}-${get("month")}-${get("day")}T${get("hour")}-${get("minute")}-${get("second")}`;
+}
+
+async function insertCronSupabaseRow(row) {
+  const url = new URL(
+    `${SUPABASE_URL}/rest/v1/${encodeURIComponent(CRON_SUPABASE_TABLE)}`,
+  );
+
+  const response = await fetch(url, {
+    method: "POST",
+    headers: {
+      ...headers,
+      "Content-Type": "application/json",
+      Prefer: "return=representation",
+    },
+    body: JSON.stringify(row),
+  });
+
+  if (!response.ok) {
+    const body = await response.text();
+    throw new Error(
+      `Unable to insert into ${CRON_SUPABASE_TABLE} (${response.status}): ${body}`,
+    );
+  }
+
+  const rows = await response.json();
+  return Array.isArray(rows) ? rows[0] ?? row : rows;
+}
+
+async function deleteAllCronSupabaseRows() {
+  const url = new URL(
+    `${SUPABASE_URL}/rest/v1/${encodeURIComponent(CRON_SUPABASE_TABLE)}`,
+  );
+  // PostgREST requires a filter for DELETE; id is always present on this table.
+  url.searchParams.set("id", "not.is.null");
+
+  const response = await fetch(url, {
+    method: "DELETE",
+    headers: {
+      ...headers,
+      Prefer: "return=representation",
+    },
+  });
+
+  if (!response.ok) {
+    const body = await response.text();
+    throw new Error(
+      `Unable to delete from ${CRON_SUPABASE_TABLE} (${response.status}): ${body}`,
+    );
+  }
+
+  const text = await response.text();
+  if (!text) {
+    return 0;
+  }
+
+  try {
+    const rows = JSON.parse(text);
+    return Array.isArray(rows) ? rows.length : 0;
+  } catch {
+    return 0;
+  }
 }
 
 function parseTableList(value) {
