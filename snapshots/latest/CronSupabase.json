@@ -1,8 +1,16 @@
 {
   "table": "CronSupabase",
   "schema": "public",
-  "count": 0,
-  "fetchedRows": 0,
-  "capturedAt": "2026-08-02T22:33:08.253Z",
-  "rows": []
+  "count": 1,
+  "fetchedRows": 1,
+  "capturedAt": "2026-08-02T23:36:12.093Z",
+  "rows": [
+    {
+      "id": "26b1df77-788e-4d8f-a17d-6b2629e650c0",
+      "name": "cron-2026-08-03T07-36-05",
+      "note": "Written at odd hour 7 (Asia/Taipei) run 2026-08-02T23-36-05-864Z",
+      "created_at": "2026-08-02T23:36:07.272434+00:00",
+      "updated_at": "2026-08-02T23:36:07.272434+00:00"
+    }
+  ]
 }
