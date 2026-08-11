@@ -1,9 +1,9 @@
 {
   "sourceRepository": "huang1988pioneer/fengbroaisupabase",
   "schema": "public",
-  "startedAt": "2026-07-12T01:10:45.157Z",
-  "finishedAt": "2026-07-12T01:10:54.237Z",
-  "tableCount": 11,
+  "startedAt": "2026-08-11T02:37:31.974Z",
+  "finishedAt": "2026-08-11T02:37:40.877Z",
+  "tableCount": 12,
   "totalRows": 476,
   "tables": [
     {
@@ -29,6 +29,12 @@
       "count": 23,
       "fetchedRows": 23,
       "file": "commondocument.json"
+    },
+    {
+      "name": "CronSupabase",
+      "count": 0,
+      "fetchedRows": 0,
+      "file": "CronSupabase.json"
     },
     {
       "name": "food",
@@ -72,5 +78,13 @@
       "fetchedRows": 3,
       "file": "video.json"
     }
-  ]
+  ],
+  "cronSupabase": {
+    "table": "CronSupabase",
+    "timezone": "Asia/Taipei",
+    "hour": 10,
+    "action": "delete",
+    "localTime": "2026-08-11T10-37-31",
+    "deletedCount": 0
+  }
 }
