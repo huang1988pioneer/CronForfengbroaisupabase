@@ -1,10 +1,10 @@
 {
   "sourceRepository": "huang1988pioneer/fengbroaisupabase",
   "schema": "public",
-  "startedAt": "2026-08-14T07:58:57.357Z",
-  "finishedAt": "2026-08-14T07:59:06.103Z",
+  "startedAt": "2026-08-14T09:38:57.946Z",
+  "finishedAt": "2026-08-14T09:39:09.108Z",
   "tableCount": 12,
-  "totalRows": 477,
+  "totalRows": 478,
   "tables": [
     {
       "name": "article",
@@ -32,8 +32,8 @@
     },
     {
       "name": "CronSupabase",
-      "count": 1,
-      "fetchedRows": 1,
+      "count": 2,
+      "fetchedRows": 2,
       "file": "CronSupabase.json"
     },
     {
@@ -82,15 +82,15 @@
   "cronSupabase": {
     "table": "CronSupabase",
     "timezone": "Asia/Taipei",
-    "hour": 15,
+    "hour": 17,
     "action": "insert",
-    "localTime": "2026-08-14T15-58-57",
+    "localTime": "2026-08-14T17-38-57",
     "inserted": {
-      "id": "7b12c2c0-d490-4173-8890-90f79b7af4c9",
-      "name": "cron-2026-08-14T15-58-57",
-      "note": "Written at odd hour 15 (Asia/Taipei) run 2026-08-14T07-58-57-357Z",
-      "created_at": "2026-08-14T07:58:58.674959+00:00",
-      "updated_at": "2026-08-14T07:58:58.674959+00:00"
+      "id": "607182ee-6c93-4256-8dbb-8ac13ab7cc7d",
+      "name": "cron-2026-08-14T17-38-57",
+      "note": "Written at odd hour 17 (Asia/Taipei) run 2026-08-14T09-38-57-946Z",
+      "created_at": "2026-08-14T09:38:59.364658+00:00",
+      "updated_at": "2026-08-14T09:38:59.364658+00:00"
     }
   }
 }
