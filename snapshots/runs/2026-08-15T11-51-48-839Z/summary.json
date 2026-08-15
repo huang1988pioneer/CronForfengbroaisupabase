@@ -1,10 +1,10 @@
 {
   "sourceRepository": "huang1988pioneer/fengbroaisupabase",
   "schema": "public",
-  "startedAt": "2026-07-16T11:20:49.520Z",
-  "finishedAt": "2026-07-16T11:20:58.976Z",
-  "tableCount": 11,
-  "totalRows": 476,
+  "startedAt": "2026-08-15T11:51:48.839Z",
+  "finishedAt": "2026-08-15T11:52:02.333Z",
+  "tableCount": 12,
+  "totalRows": 477,
   "tables": [
     {
       "name": "article",
@@ -29,6 +29,12 @@
       "count": 23,
       "fetchedRows": 23,
       "file": "commondocument.json"
+    },
+    {
+      "name": "CronSupabase",
+      "count": 1,
+      "fetchedRows": 1,
+      "file": "CronSupabase.json"
     },
     {
       "name": "food",
@@ -72,5 +78,19 @@
       "fetchedRows": 3,
       "file": "video.json"
     }
-  ]
+  ],
+  "cronSupabase": {
+    "table": "CronSupabase",
+    "timezone": "Asia/Taipei",
+    "hour": 19,
+    "action": "insert",
+    "localTime": "2026-08-15T19-51-48",
+    "inserted": {
+      "id": "9be7a66d-de84-46ae-9a16-9e9597e2a25b",
+      "name": "cron-2026-08-15T19-51-48",
+      "note": "Written at odd hour 19 (Asia/Taipei) run 2026-08-15T11-51-48-839Z",
+      "created_at": "2026-08-15T11:51:50.18606+00:00",
+      "updated_at": "2026-08-15T11:51:50.18606+00:00"
+    }
+  }
 }
