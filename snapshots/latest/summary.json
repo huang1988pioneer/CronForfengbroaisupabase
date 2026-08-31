@@ -1,8 +1,8 @@
 {
   "sourceRepository": "huang1988pioneer/fengbroaisupabase",
   "schema": "public",
-  "startedAt": "2026-08-31T06:03:19.057Z",
-  "finishedAt": "2026-08-31T06:03:29.508Z",
+  "startedAt": "2026-08-31T14:22:32.914Z",
+  "finishedAt": "2026-08-31T14:22:44.027Z",
   "tableCount": 12,
   "totalRows": 476,
   "tables": [
@@ -82,9 +82,9 @@
   "cronSupabase": {
     "table": "CronSupabase",
     "timezone": "Asia/Taipei",
-    "hour": 14,
+    "hour": 22,
     "action": "delete",
-    "localTime": "2026-08-31T14-03-19",
-    "deletedCount": 5
+    "localTime": "2026-08-31T22-22-32",
+    "deletedCount": 0
   }
 }
