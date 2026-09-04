@@ -1,10 +1,10 @@
 {
   "sourceRepository": "huang1988pioneer/fengbroaisupabase",
   "schema": "public",
-  "startedAt": "2026-08-05T08:05:19.764Z",
-  "finishedAt": "2026-08-05T08:05:29.587Z",
+  "startedAt": "2026-09-04T09:54:26.014Z",
+  "finishedAt": "2026-09-04T09:54:33.758Z",
   "tableCount": 12,
-  "totalRows": 476,
+  "totalRows": 478,
   "tables": [
     {
       "name": "article",
@@ -32,8 +32,8 @@
     },
     {
       "name": "CronSupabase",
-      "count": 0,
-      "fetchedRows": 0,
+      "count": 2,
+      "fetchedRows": 2,
       "file": "CronSupabase.json"
     },
     {
@@ -82,9 +82,15 @@
   "cronSupabase": {
     "table": "CronSupabase",
     "timezone": "Asia/Taipei",
-    "hour": 16,
-    "action": "delete",
-    "localTime": "2026-08-05T16-05-19",
-    "deletedCount": 0
+    "hour": 17,
+    "action": "insert",
+    "localTime": "2026-09-04T17-54-26",
+    "inserted": {
+      "id": "b524985a-3f05-43d1-8f1b-d5931cc362f8",
+      "name": "cron-2026-09-04T17-54-26",
+      "note": "Written at odd hour 17 (Asia/Taipei) run 2026-09-04T09-54-26-014Z",
+      "created_at": "2026-09-04T09:54:27.191432+00:00",
+      "updated_at": "2026-09-04T09:54:27.191432+00:00"
+    }
   }
 }
