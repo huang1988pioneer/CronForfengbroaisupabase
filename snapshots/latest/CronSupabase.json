@@ -1,37 +1,8 @@
 {
   "table": "CronSupabase",
   "schema": "public",
-  "count": 4,
-  "fetchedRows": 4,
-  "capturedAt": "2026-09-05T01:21:38.947Z",
-  "rows": [
-    {
-      "id": "99261806-ffce-415b-9bd6-60e338a33517",
-      "name": "cron-2026-09-05T01-45-45",
-      "note": "Written at odd hour 1 (Asia/Taipei) run 2026-09-04T17-45-45-913Z",
-      "created_at": "2026-09-04T17:45:47.132232+00:00",
-      "updated_at": "2026-09-04T17:45:47.132232+00:00"
-    },
-    {
-      "id": "8098f47e-48a9-4d64-842f-bb9c0b9cd2c9",
-      "name": "cron-2026-09-05T05-00-20",
-      "note": "Written at odd hour 5 (Asia/Taipei) run 2026-09-04T21-00-20-801Z",
-      "created_at": "2026-09-04T21:00:21.871845+00:00",
-      "updated_at": "2026-09-04T21:00:21.871845+00:00"
-    },
-    {
-      "id": "73019488-48de-42d3-914b-d2d55d66bfda",
-      "name": "cron-2026-09-05T07-15-54",
-      "note": "Written at odd hour 7 (Asia/Taipei) run 2026-09-04T23-15-54-187Z",
-      "created_at": "2026-09-04T23:15:55.2246+00:00",
-      "updated_at": "2026-09-04T23:15:55.2246+00:00"
-    },
-    {
-      "id": "19deb9bb-db4f-48d6-b5d1-8f6aafc8ec6c",
-      "name": "cron-2026-09-05T09-21-32",
-      "note": "Written at odd hour 9 (Asia/Taipei) run 2026-09-05T01-21-32-073Z",
-      "created_at": "2026-09-05T01:21:33.201697+00:00",
-      "updated_at": "2026-09-05T01:21:33.201697+00:00"
-    }
-  ]
+  "count": 0,
+  "fetchedRows": 0,
+  "capturedAt": "2026-09-05T06:17:19.090Z",
+  "rows": []
 }
