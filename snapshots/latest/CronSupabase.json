@@ -1,51 +1,8 @@
 {
   "table": "CronSupabase",
   "schema": "public",
-  "count": 6,
-  "fetchedRows": 6,
-  "capturedAt": "2026-09-06T21:40:18.701Z",
-  "rows": [
-    {
-      "id": "118b99b6-3fa0-4dae-9670-e609e8095df4",
-      "name": "cron-2026-09-06T13-02-37",
-      "note": "Written at odd hour 13 (Asia/Taipei) run 2026-09-06T05-02-37-923Z",
-      "created_at": "2026-09-06T05:02:39.189162+00:00",
-      "updated_at": "2026-09-06T05:02:39.189162+00:00"
-    },
-    {
-      "id": "01ad8881-ce75-4fb5-b551-897109607a2c",
-      "name": "cron-2026-09-06T17-38-30",
-      "note": "Written at odd hour 17 (Asia/Taipei) run 2026-09-06T09-38-30-303Z",
-      "created_at": "2026-09-06T09:38:31.529973+00:00",
-      "updated_at": "2026-09-06T09:38:31.529973+00:00"
-    },
-    {
-      "id": "7df5d1b2-a879-4355-89ff-2d7ccd2b2b58",
-      "name": "cron-2026-09-06T21-47-17",
-      "note": "Written at odd hour 21 (Asia/Taipei) run 2026-09-06T13-47-17-684Z",
-      "created_at": "2026-09-06T13:47:18.801393+00:00",
-      "updated_at": "2026-09-06T13:47:18.801393+00:00"
-    },
-    {
-      "id": "2ec3e888-c848-4931-8a66-c11f0fb780ef",
-      "name": "cron-2026-09-07T01-19-33",
-      "note": "Written at odd hour 1 (Asia/Taipei) run 2026-09-06T17-19-33-654Z",
-      "created_at": "2026-09-06T17:19:34.915228+00:00",
-      "updated_at": "2026-09-06T17:19:34.915228+00:00"
-    },
-    {
-      "id": "bfb430ac-6132-43db-82eb-9fcab6f4d293",
-      "name": "cron-2026-09-07T03-28-00",
-      "note": "Written at odd hour 3 (Asia/Taipei) run 2026-09-06T19-28-00-470Z",
-      "created_at": "2026-09-06T19:28:01.70257+00:00",
-      "updated_at": "2026-09-06T19:28:01.70257+00:00"
-    },
-    {
-      "id": "daa4fbfc-aac0-4e03-8936-9c1ae4c90b82",
-      "name": "cron-2026-09-07T05-40-11",
-      "note": "Written at odd hour 5 (Asia/Taipei) run 2026-09-06T21-40-11-198Z",
-      "created_at": "2026-09-06T21:40:12.313501+00:00",
-      "updated_at": "2026-09-06T21:40:12.313501+00:00"
-    }
-  ]
+  "count": 0,
+  "fetchedRows": 0,
+  "capturedAt": "2026-09-07T00:18:35.604Z",
+  "rows": []
 }
