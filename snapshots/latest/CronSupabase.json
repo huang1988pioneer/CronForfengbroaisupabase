@@ -1,23 +1,8 @@
 {
   "table": "CronSupabase",
   "schema": "public",
-  "count": 2,
-  "fetchedRows": 2,
-  "capturedAt": "2026-09-18T01:25:58.748Z",
-  "rows": [
-    {
-      "id": "1c13ecc7-05d3-4660-ad03-4ce0c3a39d47",
-      "name": "cron-2026-09-18T07-03-26",
-      "note": "Written at odd hour 7 (Asia/Taipei) run 2026-09-17T23-03-26-077Z",
-      "created_at": "2026-09-17T23:03:27.375023+00:00",
-      "updated_at": "2026-09-17T23:03:27.375023+00:00"
-    },
-    {
-      "id": "e38c9cf0-0c51-4bfa-a30f-74362b966fdd",
-      "name": "cron-2026-09-18T09-25-50",
-      "note": "Written at odd hour 9 (Asia/Taipei) run 2026-09-18T01-25-50-151Z",
-      "created_at": "2026-09-18T01:25:51.47758+00:00",
-      "updated_at": "2026-09-18T01:25:51.47758+00:00"
-    }
-  ]
+  "count": 0,
+  "fetchedRows": 0,
+  "capturedAt": "2026-09-18T06:35:53.301Z",
+  "rows": []
 }
