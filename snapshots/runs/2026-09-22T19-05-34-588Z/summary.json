@@ -1,8 +1,8 @@
 {
   "sourceRepository": "huang1988pioneer/fengbroaisupabase",
   "schema": "public",
-  "startedAt": "2026-08-23T19:00:19.077Z",
-  "finishedAt": "2026-08-23T19:00:33.139Z",
+  "startedAt": "2026-09-22T19:05:34.588Z",
+  "finishedAt": "2026-09-22T19:05:46.487Z",
   "tableCount": 12,
   "totalRows": 478,
   "tables": [
@@ -84,13 +84,13 @@
     "timezone": "Asia/Taipei",
     "hour": 3,
     "action": "insert",
-    "localTime": "2026-08-24T03-00-19",
+    "localTime": "2026-09-23T03-05-34",
     "inserted": {
-      "id": "d1152302-869a-47a1-b9c9-9d06b5365652",
-      "name": "cron-2026-08-24T03-00-19",
-      "note": "Written at odd hour 3 (Asia/Taipei) run 2026-08-23T19-00-19-077Z",
-      "created_at": "2026-08-23T19:00:20.454506+00:00",
-      "updated_at": "2026-08-23T19:00:20.454506+00:00"
+      "id": "7c48401c-8291-4234-bc50-407d15ebd47f",
+      "name": "cron-2026-09-23T03-05-34",
+      "note": "Written at odd hour 3 (Asia/Taipei) run 2026-09-22T19-05-34-588Z",
+      "created_at": "2026-09-22T19:05:36.006016+00:00",
+      "updated_at": "2026-09-22T19:05:36.006016+00:00"
     }
   }
 }
