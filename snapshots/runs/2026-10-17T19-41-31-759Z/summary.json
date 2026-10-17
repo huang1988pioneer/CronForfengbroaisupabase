@@ -1,0 +1,96 @@
+{
+  "sourceRepository": "huang1988pioneer/fengbroaisupabase",
+  "schema": "public",
+  "startedAt": "2026-10-17T19:41:31.759Z",
+  "finishedAt": "2026-10-17T19:41:42.062Z",
+  "tableCount": 12,
+  "totalRows": 478,
+  "tables": [
+    {
+      "name": "article",
+      "count": 135,
+      "fetchedRows": 135,
+      "file": "article.json"
+    },
+    {
+      "name": "bank",
+      "count": 13,
+      "fetchedRows": 13,
+      "file": "bank.json"
+    },
+    {
+      "name": "commonaccount",
+      "count": 173,
+      "fetchedRows": 173,
+      "file": "commonaccount.json"
+    },
+    {
+      "name": "commondocument",
+      "count": 23,
+      "fetchedRows": 23,
+      "file": "commondocument.json"
+    },
+    {
+      "name": "CronSupabase",
+      "count": 2,
+      "fetchedRows": 2,
+      "file": "CronSupabase.json"
+    },
+    {
+      "name": "food",
+      "count": 20,
+      "fetchedRows": 20,
+      "file": "food.json"
+    },
+    {
+      "name": "image",
+      "count": 15,
+      "fetchedRows": 15,
+      "file": "image.json"
+    },
+    {
+      "name": "music",
+      "count": 11,
+      "fetchedRows": 11,
+      "file": "music.json"
+    },
+    {
+      "name": "podcast",
+      "count": 0,
+      "fetchedRows": 0,
+      "file": "podcast.json"
+    },
+    {
+      "name": "routine",
+      "count": 25,
+      "fetchedRows": 25,
+      "file": "routine.json"
+    },
+    {
+      "name": "subscription",
+      "count": 58,
+      "fetchedRows": 58,
+      "file": "subscription.json"
+    },
+    {
+      "name": "video",
+      "count": 3,
+      "fetchedRows": 3,
+      "file": "video.json"
+    }
+  ],
+  "cronSupabase": {
+    "table": "CronSupabase",
+    "timezone": "Asia/Taipei",
+    "hour": 3,
+    "action": "insert",
+    "localTime": "2026-10-18T03-41-31",
+    "inserted": {
+      "id": "a1588de8-f147-4b63-b5a4-0c3bee3d69cb",
+      "name": "cron-2026-10-18T03-41-31",
+      "note": "Written at odd hour 3 (Asia/Taipei) run 2026-10-17T19-41-31-759Z",
+      "created_at": "2026-10-17T19:41:33.02791+00:00",
+      "updated_at": "2026-10-17T19:41:33.02791+00:00"
+    }
+  }
+}
