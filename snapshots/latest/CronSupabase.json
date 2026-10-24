@@ -1,9 +1,9 @@
 {
   "table": "CronSupabase",
   "schema": "public",
-  "count": 1,
-  "fetchedRows": 1,
-  "capturedAt": "2026-10-24T21:08:38.878Z",
+  "count": 2,
+  "fetchedRows": 2,
+  "capturedAt": "2026-10-24T23:39:42.607Z",
   "rows": [
     {
       "id": "395fc42b-8619-4701-a16b-8ee61934767c",
@@ -11,6 +11,13 @@
       "note": "Written at odd hour 5 (Asia/Taipei) run 2026-10-24T21-08-32-367Z",
       "created_at": "2026-10-24T21:08:33.477311+00:00",
       "updated_at": "2026-10-24T21:08:33.477311+00:00"
+    },
+    {
+      "id": "1151b78d-f125-4e90-a567-f0c2d6ee21cd",
+      "name": "cron-2026-10-25T07-39-36",
+      "note": "Written at odd hour 7 (Asia/Taipei) run 2026-10-24T23-39-36-557Z",
+      "created_at": "2026-10-24T23:39:37.676079+00:00",
+      "updated_at": "2026-10-24T23:39:37.676079+00:00"
     }
   ]
 }
